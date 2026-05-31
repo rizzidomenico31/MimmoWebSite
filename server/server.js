@@ -12,7 +12,10 @@ app.set('trust proxy', 1);
 
 // Security
 app.use(helmet());
-app.use(cors(config.cors));
+// In production frontend and backend share the same origin — CORS only needed locally
+if (process.env.NODE_ENV !== 'production') {
+  app.use(cors(config.cors));
+}
 
 // Body parsing
 app.use(express.json({ limit: '10kb' }));
