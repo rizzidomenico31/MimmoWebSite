@@ -22,6 +22,7 @@ async function sendContactEmail({ name, email, subject, message }) {
       user: config.email.user,
       pass: config.email.pass,
     },
+    family: 4,
     connectionTimeout: 5000,
     greetingTimeout: 5000,
     socketTimeout: 10000,
