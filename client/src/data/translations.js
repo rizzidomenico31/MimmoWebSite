@@ -15,8 +15,8 @@ export const translations = {
         { output: '> Loading identity module...' },
         { output: '> Name: Domenico Rizzi' },
         { output: '> Role: Cybersecurity & Cloud Engineer' },
-        { output: '> Degree: Laurea Magistrale in Ingegneria Informatica' },
-        { output: '> Specialization: Cybersecurity & Cloud Computing' },
+        { output: '> University: Politecnico di Bari' },
+        { output: '> M.Sc. Computer Science — CyberSecurity & Cloud' },
         { success: '> Status: ONLINE ✓' },
       ],
       title: 'Domenico Rizzi',
@@ -27,8 +27,8 @@ export const translations = {
     about: {
       tag: '// chi sono',
       title: 'About Me',
-      bio: `Ingegnere Informatico Magistrale con specializzazione in Cybersecurity e Cloud Computing. Appassionato di sicurezza informatica, architetture cloud scalabili e sviluppo di soluzioni innovative per proteggere infrastrutture digitali.`,
-      bio2: `La mia esperienza spazia dalla progettazione di sistemi sicuri all'implementazione di architetture cloud-native, con un focus particolare su penetration testing, threat analysis e DevSecOps.`,
+      bio: `Laureato in Ingegneria Informatica e dell'Automazione al Politecnico di Bari, attualmente frequento la Laurea Magistrale in Computer Science con curriculum CyberSecurity & Cloud. Appassionato di sicurezza informatica, architetture cloud scalabili e sviluppo di soluzioni innovative per proteggere infrastrutture digitali.`,
+      bio2: `Il mio percorso unisce solide basi di ingegneria a una specializzazione avanzata in cybersecurity e cloud computing, con focus su penetration testing, threat analysis, DevSecOps e architetture cloud-native.`,
       stats: {
         projects: 'Progetti',
         certs: 'Certificazioni',
@@ -103,8 +103,8 @@ export const translations = {
         { output: '> Loading identity module...' },
         { output: '> Name: Domenico Rizzi' },
         { output: '> Role: Cybersecurity & Cloud Engineer' },
-        { output: '> Degree: M.Sc. in Computer Engineering' },
-        { output: '> Specialization: Cybersecurity & Cloud Computing' },
+        { output: '> University: Politecnico di Bari' },
+        { output: '> M.Sc. Computer Science — CyberSecurity & Cloud' },
         { success: '> Status: ONLINE ✓' },
       ],
       title: 'Domenico Rizzi',
@@ -115,8 +115,8 @@ export const translations = {
     about: {
       tag: '// about me',
       title: 'About Me',
-      bio: `M.Sc. Computer Engineer specialized in Cybersecurity and Cloud Computing. Passionate about information security, scalable cloud architectures, and developing innovative solutions to protect digital infrastructures.`,
-      bio2: `My experience ranges from designing secure systems to implementing cloud-native architectures, with a particular focus on penetration testing, threat analysis, and DevSecOps.`,
+      bio: `B.Sc. in Computer and Automation Engineering from Politecnico di Bari, currently pursuing an M.Sc. in Computer Science with a CyberSecurity & Cloud curriculum. Passionate about information security, scalable cloud architectures, and innovative solutions to protect digital infrastructures.`,
+      bio2: `My background combines strong engineering foundations with advanced specialization in cybersecurity and cloud computing, focusing on penetration testing, threat analysis, DevSecOps, and cloud-native architectures.`,
       stats: {
         projects: 'Projects',
         certs: 'Certifications',
