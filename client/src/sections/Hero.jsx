@@ -49,10 +49,18 @@ export default function Hero() {
             <h1 className="hero-title">{t.hero.title}</h1>
             <p className="hero-subtitle">{t.hero.subtitle}</p>
             <div className="hero-buttons">
-              <a href="#projects" className="btn btn-primary">
+              <a
+                href="#projects"
+                className="btn btn-primary"
+                onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); history.pushState(null, '', '/'); }}
+              >
                 {t.hero.btnProjects}
               </a>
-              <a href="#contact" className="btn btn-outline">
+              <a
+                href="#contact"
+                className="btn btn-outline"
+                onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); history.pushState(null, '', '/'); }}
+              >
                 {t.hero.btnContact}
               </a>
             </div>

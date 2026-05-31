@@ -4,6 +4,11 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 const navKeys = ['about', 'skills', 'projects', 'experience', 'certs', 'contact'];
 
+const scrollTo = (id) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  history.pushState(null, '', window.location.pathname);
+};
+
 export default function Navbar() {
   const { t, lang, toggleLang } = useLang();
   const [scrolled, setScrolled] = useState(false);
@@ -35,7 +40,11 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="container">
-        <a href="#" className="navbar-logo">
+        <a
+          href="/"
+          className="navbar-logo"
+          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); history.pushState(null, '', '/'); }}
+        >
           Domenico Rizzi<span>.</span>
         </a>
 
@@ -45,7 +54,7 @@ export default function Navbar() {
               <a
                 href={`#${key}`}
                 className={activeSection === key ? 'active' : ''}
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) => { e.preventDefault(); scrollTo(key); setMenuOpen(false); }}
               >
                 {t.nav[key]}
               </a>
