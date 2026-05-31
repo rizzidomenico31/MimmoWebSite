@@ -22,6 +22,9 @@ async function sendContactEmail({ name, email, subject, message }) {
       user: config.email.user,
       pass: config.email.pass,
     },
+    connectionTimeout: 5000,
+    greetingTimeout: 5000,
+    socketTimeout: 10000,
   });
 
   await transporter.sendMail({

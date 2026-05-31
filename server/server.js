@@ -37,6 +37,16 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+// Global error handler — prevents unhandled rejections from crashing the process
+app.use((err, req, res, next) => {
+  console.error('Express error:', err.message);
+  res.status(500).json({ error: 'Internal server error.' });
+});
+
+process.on('unhandledRejection', (err) => {
+  console.error('Unhandled rejection (non-fatal):', err?.message ?? err);
+});
+
 // Start server
 app.listen(config.port, () => {
   console.log(`\n🛡️  Portfolio Server running on port ${config.port}`);
