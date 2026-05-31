@@ -58,8 +58,8 @@ export const projectsData = [];
 export const experienceData = [
   {
     id: 1,
-    dateIt: '2024 — Presente',
-    dateEn: '2024 — Present',
+    dateIt: '2025 — Presente',
+    dateEn: '2025 — Present',
     titleIt: 'Laurea Magistrale — Computer Science',
     titleEn: 'M.Sc. — Computer Science',
     company: 'Politecnico di Bari',
@@ -68,8 +68,8 @@ export const experienceData = [
   },
   {
     id: 2,
-    dateIt: '2021 — 2024',
-    dateEn: '2021 — 2024',
+    dateIt: '2022 — 2025',
+    dateEn: '2022 — 2025',
     titleIt: 'Laurea Triennale — Ingegneria Informatica e dell\'Automazione',
     titleEn: 'B.Sc. — Computer and Automation Engineering',
     company: 'Politecnico di Bari',
