@@ -60,9 +60,9 @@ export default function Contact() {
             <p>{t.contact.infoText}</p>
 
             <div className="contact-links">
-              <a href="mailto:domenico.rizzi@email.com" className="contact-link-item">
+              <a href="mailto:info@mimmorizzi.com" className="contact-link-item">
                 <FaEnvelope className="link-icon" />
-                domenico.rizzi@email.com
+                info@mimmorizzi.com
               </a>
               <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="contact-link-item">
                 <FaGithub className="link-icon" />
