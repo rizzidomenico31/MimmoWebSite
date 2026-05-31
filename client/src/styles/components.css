@@ -295,46 +295,37 @@
   gap: 24px;
 }
 .skill-category h3 {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--neon-cyan);
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
+  letter-spacing: 0.08em;
 }
 .skill-category h3 .cat-icon {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
-.skill-item {
-  margin-bottom: 16px;
-}
-.skill-header {
+.skill-tags {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-.skill-name {
+.skill-tag {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(0, 255, 65, 0.06);
   color: var(--text-primary);
+  border: 1px solid rgba(0, 255, 65, 0.15);
+  transition: var(--transition-fast);
+  letter-spacing: 0.02em;
 }
-.skill-percent {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+.skill-tag:hover {
+  background: var(--neon-green-dim);
+  border-color: var(--neon-green);
   color: var(--neon-green);
-}
-.skill-bar {
-  height: 6px;
-  background: var(--bg-tertiary);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.skill-fill {
-  height: 100%;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--neon-green), var(--neon-cyan));
-  box-shadow: 0 0 10px var(--neon-green-glow);
-  animation: fillBar 1.5s ease-out forwards;
 }
 
 /* ---------- Projects ---------- */

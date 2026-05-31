@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Skills() {
   const { t } = useLang();
-  const [ref, inView] = useInView({ threshold: 0.15, triggerOnce: true });
+  const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
     <section className="section" id="skills" ref={ref}>
@@ -23,31 +23,19 @@ export default function Skills() {
               className="glass-card skill-category"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: ci * 0.15 }}
+              transition={{ duration: 0.5, delay: ci * 0.1 }}
             >
               <h3>
                 <span className="cat-icon">{cat.icon}</span>
                 {t.skills.categories[cat.categoryKey]}
               </h3>
-              {cat.skills.map((skill, si) => (
-                <div key={skill.name} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-percent">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    {inView && (
-                      <div
-                        className="skill-fill"
-                        style={{
-                          width: `${skill.level}%`,
-                          animationDelay: `${ci * 0.15 + si * 0.1}s`,
-                        }}
-                      />
-                    )}
-                  </div>
-                </div>
-              ))}
+              <div className="skill-tags">
+                {cat.skills.map((skill) => (
+                  <span key={skill.name} className="skill-tag">
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>

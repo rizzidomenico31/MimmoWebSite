@@ -64,11 +64,11 @@ export default function Contact() {
                 <FaEnvelope className="link-icon" />
                 info@mimmorizzi.com
               </a>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="contact-link-item">
+              <a href="https://github.com/rizzidomenico31" target="_blank" rel="noopener noreferrer" className="contact-link-item">
                 <FaGithub className="link-icon" />
-                github.com/domenico-rizzi
+                github.com/rizzidomenico31
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="contact-link-item">
+              <a href="https://www.linkedin.com/in/domenico-rizzi/" target="_blank" rel="noopener noreferrer" className="contact-link-item">
                 <FaLinkedin className="link-icon" />
                 linkedin.com/in/domenico-rizzi
               </a>

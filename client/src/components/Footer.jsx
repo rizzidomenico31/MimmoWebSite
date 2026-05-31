@@ -9,13 +9,13 @@ export default function Footer() {
       <div className="container footer-content">
         <p className="footer-copy">{t.footer.copy}</p>
         <div className="footer-socials">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/rizzidomenico31" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/domenico-rizzi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="mailto:domenico.rizzi@email.com" aria-label="Email">
+          <a href="mailto:info@mimmorizzi.com" aria-label="Email">
             <FaEnvelope />
           </a>
         </div>
