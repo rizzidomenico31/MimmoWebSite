@@ -53,74 +53,7 @@ export const skillsData = [
   },
 ];
 
-export const projectsData = [
-  {
-    id: 1,
-    title: 'NetGuard SIEM',
-    descIt: 'Dashboard SIEM personalizzata per il monitoraggio in tempo reale di eventi di sicurezza con alerting automatico e analisi delle minacce.',
-    descEn: 'Custom SIEM dashboard for real-time security event monitoring with automated alerting and threat analysis.',
-    tags: ['Python', 'Elasticsearch', 'React', 'Docker'],
-    category: 'security',
-    status: 'completed',
-    github: '#',
-    demo: '#',
-  },
-  {
-    id: 2,
-    title: 'CloudFortress',
-    descIt: 'Infrastruttura cloud sicura su AWS con IaC (Terraform), WAF, e pipeline CI/CD con security scanning integrato.',
-    descEn: 'Secure cloud infrastructure on AWS with IaC (Terraform), WAF, and CI/CD pipelines with integrated security scanning.',
-    tags: ['AWS', 'Terraform', 'Docker', 'GitHub Actions'],
-    category: 'cloud',
-    status: 'active',
-    github: '#',
-    demo: '#',
-  },
-  {
-    id: 3,
-    title: 'VulnScanner Pro',
-    descIt: 'Scanner automatizzato per vulnerability assessment di applicazioni web, con report dettagliati e classificazione CVSS.',
-    descEn: 'Automated vulnerability assessment scanner for web applications, with detailed reports and CVSS classification.',
-    tags: ['Python', 'Nmap', 'OWASP', 'Flask'],
-    category: 'security',
-    status: 'completed',
-    github: '#',
-    demo: '#',
-  },
-  {
-    id: 4,
-    title: 'K8s Security Monitor',
-    descIt: 'Sistema di monitoraggio sicurezza per cluster Kubernetes con rilevamento anomalie e policy enforcement.',
-    descEn: 'Security monitoring system for Kubernetes clusters with anomaly detection and policy enforcement.',
-    tags: ['Kubernetes', 'Go', 'Prometheus', 'Grafana'],
-    category: 'cloud',
-    status: 'progress',
-    github: '#',
-    demo: null,
-  },
-  {
-    id: 5,
-    title: 'CryptoVault',
-    descIt: 'Applicazione per la gestione sicura di password e segreti con crittografia end-to-end e autenticazione multi-fattore.',
-    descEn: 'Secure password and secrets management application with end-to-end encryption and multi-factor authentication.',
-    tags: ['React', 'Node.js', 'AES-256', 'MongoDB'],
-    category: 'dev',
-    status: 'completed',
-    github: '#',
-    demo: '#',
-  },
-  {
-    id: 6,
-    title: 'PhishDetect AI',
-    descIt: 'Sistema di rilevamento phishing basato su machine learning con analisi di URL, email e contenuti web sospetti.',
-    descEn: 'ML-based phishing detection system with analysis of URLs, emails, and suspicious web content.',
-    tags: ['Python', 'TensorFlow', 'NLP', 'FastAPI'],
-    category: 'security',
-    status: 'active',
-    github: '#',
-    demo: '#',
-  },
-];
+export const projectsData = [];
 
 export const experienceData = [
   {

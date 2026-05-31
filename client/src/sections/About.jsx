@@ -22,7 +22,9 @@ export default function About() {
         >
           <div className="about-image-wrapper">
             <div className="about-image-frame">
-              <div className="about-image-placeholder">🛡️</div>
+              <div className="about-image-placeholder">
+                <span className="about-initials">DR</span>
+              </div>
             </div>
           </div>
 

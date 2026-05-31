@@ -25,14 +25,18 @@
   align-items: center;
 }
 .navbar-logo {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--neon-green);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
-.navbar-logo span { color: var(--text-secondary); }
+.navbar-logo span {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px var(--neon-cyan-glow);
+}
 .navbar-links {
   display: flex;
   list-style: none;
@@ -238,7 +242,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+}
+.about-initials {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--neon-green);
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 30px var(--neon-green-glow), 0 0 60px rgba(0,255,65,0.15);
+  user-select: none;
 }
 .about-info h3 {
   color: var(--neon-green);
@@ -427,6 +439,25 @@
 }
 .project-link:hover {
   color: var(--neon-green);
+}
+
+/* ---------- Projects Empty State ---------- */
+.projects-empty {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 40px;
+}
+.projects-empty-terminal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: var(--shadow-card), 0 0 40px rgba(0,255,65,0.05);
+}
+.projects-empty-terminal .terminal-body {
+  min-height: 140px;
 }
 
 /* ---------- Experience ---------- */

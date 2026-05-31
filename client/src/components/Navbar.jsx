@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="container">
         <a href="#" className="navbar-logo">
-          DR<span>.</span>
+          Domenico Rizzi<span>.</span>
         </a>
 
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
