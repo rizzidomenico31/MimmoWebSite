@@ -1,11 +1,10 @@
-const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
 const config = require('../config');
 
 async function sendContactEmail({ name, email, subject, message }) {
-  // Se SMTP non è configurato, log in console
-  if (!config.email.host || !config.email.user) {
+  if (!process.env.RESEND_API_KEY) {
     console.log('═══════════════════════════════════════');
-    console.log('📧 NEW CONTACT MESSAGE');
+    console.log('📧 NEW CONTACT MESSAGE (console mode)');
     console.log('═══════════════════════════════════════');
     console.log(`From: ${name} <${email}>`);
     console.log(`Subject: ${subject}`);
@@ -14,24 +13,12 @@ async function sendContactEmail({ name, email, subject, message }) {
     return { success: true, mode: 'console' };
   }
 
-  const transporter = nodemailer.createTransport({
-    host: config.email.host,
-    port: config.email.port,
-    secure: config.email.port === 465,
-    auth: {
-      user: config.email.user,
-      pass: config.email.pass,
-    },
-    family: 4,
-    connectionTimeout: 5000,
-    greetingTimeout: 5000,
-    socketTimeout: 10000,
-  });
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
-  await transporter.sendMail({
-    from: `"${name}" <${config.email.user}>`,
-    replyTo: email,
+  await resend.emails.send({
+    from: `Portfolio <info@mimmorizzi.com>`,
     to: config.email.to,
+    reply_to: email,
     subject: `[Portfolio] ${subject}`,
     html: `
       <h2>Nuovo messaggio dal portfolio</h2>
