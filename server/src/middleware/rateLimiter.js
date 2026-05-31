@@ -1,13 +1,12 @@
 const rateLimit = require('express-rate-limit');
 
 const contactLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minuti
+  windowMs: 15 * 60 * 1000,
   max: 5,
-  message: {
-    error: 'Too many requests. Please try again later.',
-  },
+  message: { error: 'Too many requests. Please try again later.' },
   standardHeaders: true,
   legacyHeaders: false,
+  validate: { xForwardedForHeader: false },
 });
 
 module.exports = { contactLimiter };
